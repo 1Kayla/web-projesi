@@ -1,0 +1,65 @@
+﻿@model IEnumerable<GirOr.Data.Entity.TestClass>
+
+@{
+    ViewData["Title"] = "Listele";
+}
+
+<h1>Listele</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.isim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.soyisim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.girisimAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.girisimYil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fkUser)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.soyisim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.girisimAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.girisimYil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fkUser)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Id  }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.Id  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

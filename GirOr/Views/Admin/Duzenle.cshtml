@@ -1,0 +1,58 @@
+﻿@model GirOr.Data.Entity.TestClass
+
+@{
+    ViewData["Title"] = "Duzenle";
+}
+
+<h1>Düzenle</h1>
+
+<h4>TestClass</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Duzenle">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="isim" class="control-label"></label>
+                <input asp-for="isim" class="form-control" />
+                <span asp-validation-for="isim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="soyisim" class="control-label"></label>
+                <input asp-for="soyisim" class="form-control" />
+                <span asp-validation-for="soyisim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="girisimAdi" class="control-label"></label>
+                <input asp-for="girisimAdi" class="form-control" />
+                <span asp-validation-for="girisimAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="girisimYil" class="control-label"></label>
+                <input asp-for="girisimYil" class="form-control" />
+                <span asp-validation-for="girisimYil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fkUser" class="control-label"></label>
+                <input asp-for="fkUser" class="form-control" />
+                <span asp-validation-for="fkUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
