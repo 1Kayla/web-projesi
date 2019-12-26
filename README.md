@@ -1,7 +1,7 @@
 # web-projesi
 KHAYALA ISMAYILOVA:G151210561
 SEYIT MURAT SEÇİLMİŞ: G161210075
-MUHAMMED EMIN KARABOĞA
+MUHAMMED EMIN KARABOĞA: B151210045
 
 .net core3.0 ve codefirs ile yapılmıştır
 Projemiz insanların Üniversite kampüslerine fidan dikerek  Girişimcilik ve çevre ekosistemine katkıda bulunmak için önceden sanal bir yer ayırmalarını sağlamak amacıyla yapılmış bir websitesidir. 
