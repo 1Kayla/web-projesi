@@ -9,3 +9,6 @@ Web sitesinin arayüzü üye kaydı ve admin paneli içermektedir.
 Web sitesini Microsoft’un Asp .net core 3.0 
 Veri tabanı işlemlerimiz için Entity Framework mimarisinin codefirst modelini kullanarak yaptık
 Projemizi eklediğimiz Azure ve Github linkleri: 
+https://kayla96.visualstudio.com/_git/WebProje
+https://github.com/1Kayla/web-projesi 
+https://github.com/muratsecilmis
